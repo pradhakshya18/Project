@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewContainers"></activity>
+        <activity android:name=".EditSingleRecordActivity2"></activity>
+        <activity android:name=".ShowSingleRecordActivity2" />
+        <activity android:name=".DisplayContainers" />
+        <activity android:name=".EditSingleRecordActivity" />
+        <activity android:name=".ShowSingleRecordActivity" />
+        <activity android:name=".DisplayTransporters" />
         <activity android:name=".Registercont" />
-        <activity android:name=".ViewTransporters" />
         <activity android:name=".RegisterOptions" />
         <activity android:name=".Option3" />
         <activity android:name=".Option2" />

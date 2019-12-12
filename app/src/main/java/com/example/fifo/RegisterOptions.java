@@ -31,7 +31,7 @@ public class RegisterOptions extends AppCompatActivity {
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent b=new Intent(RegisterOptions.this,ViewTransporters.class);
+                Intent b=new Intent(RegisterOptions.this,DisplayTransporters.class);
                 startActivity(b);
             }
         });
@@ -47,7 +47,7 @@ public class RegisterOptions extends AppCompatActivity {
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent d=new Intent(RegisterOptions.this,ViewContainers.class);
+                Intent d=new Intent(RegisterOptions.this,DisplayContainers.class);
                 startActivity(d);
             }
         });
