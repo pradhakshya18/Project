@@ -24,7 +24,7 @@
         android:layout_below="@+id/select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TRANSPORTER DETAILS +" />
+        android:text="1. CALCULATE MY CGPA" />
 
     <TextView
         android:id="@+id/tdview"
@@ -32,7 +32,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VIEW TRANSPORTER DETAILS" />
+        android:text="2. TO-DO LIST" />
 
     <TextView
         android:id="@+id/contadd"
@@ -40,15 +40,9 @@
         android:layout_below="@id/tdview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONTAINER DETAILS+" />
+        android:text="3. MY PROFILE" />
 
-    <TextView
-        android:id="@+id/contview"
-        android:layout_below="@id/contadd"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VIEW CONTAINER DETAILS" />
+
 
 
 </RelativeLayout>

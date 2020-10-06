@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="LOGIN FOR TRANSPORTER"
+        android:text="LOGIN PAGE"
         android:textColorHighlight="@color/colorPrimaryDark"
         android:textSize="40dp"
         android:textAlignment="center"/>
@@ -43,9 +43,14 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="Login"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:text="Login" />
 
-
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER" />
 
 </LinearLayout>

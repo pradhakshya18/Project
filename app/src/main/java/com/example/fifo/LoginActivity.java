@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     EditText mTextUsername,mTextPassword;
-    Button mButtonLogin;
+    Button mButtonLogin,mButtonRegister;
     DatabaseHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         mTextUsername=(EditText)findViewById(R.id.lun);
         mTextPassword=(EditText)findViewById(R.id.lp);
         mButtonLogin=(Button) findViewById(R.id.login);
+        mButtonRegister = (Button) findViewById(R.id.register);
 
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -49,6 +50,14 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
             });
+        mButtonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(a);
+            }
+        });
+
 
     }
 }

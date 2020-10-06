@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText mTextUsername,mTextPassword,mTextcPassword;
+    EditText mTextUsername,mTextPassword,mTextcPassword,fname,lname,dept,year;
     Button mButtonRegister;
     TextView mTextViewLogin;
     DatabaseHelper db;
@@ -27,6 +27,10 @@ public class RegisterActivity extends AppCompatActivity {
         mTextUsername=(EditText)findViewById(R.id.run);
         mTextPassword=(EditText)findViewById(R.id.rp);
         mTextcPassword=(EditText)findViewById(R.id.rcp);
+        fname=(EditText)findViewById(R.id.rfn);
+        lname=(EditText)findViewById(R.id.rln);
+        dept=(EditText)findViewById(R.id.rd);
+        year=(EditText)findViewById(R.id.ry);
         mButtonRegister=(Button) findViewById(R.id.register);
         mTextViewLogin=(TextView)findViewById(R.id.rlogin);
 
@@ -36,16 +40,21 @@ public class RegisterActivity extends AppCompatActivity {
                 String user = mTextUsername.getText().toString().trim();
                 String pwd = mTextPassword.getText().toString().trim();
                 String cnf_pwd = mTextcPassword.getText().toString().trim();
+                String fn=fname.getText().toString().trim();
+                String ln=lname.getText().toString().trim();
+                String d=dept.getText().toString().trim();
+                String y=year.getText().toString().trim();
+
 
                 if(pwd.equals(cnf_pwd)){
-                    long val = db.addUser(user,pwd);
+                    long val = db.addUser(user,pwd,fn,ln,d,y);
                     if(val > 0){
                         Toast.makeText(RegisterActivity.this,"You have registered",Toast.LENGTH_SHORT).show();
                         Intent moveToLogin = new Intent(RegisterActivity.this,LoginActivity.class);
                         startActivity(moveToLogin);
                     }
                     else{
-                        Toast.makeText(RegisterActivity.this,"Registeration Error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this,"Registration Error",Toast.LENGTH_SHORT).show();
                     }
 
                 }

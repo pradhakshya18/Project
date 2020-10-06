@@ -18,7 +18,7 @@ public class RegisterOptions extends AppCompatActivity {
         t1=(TextView)findViewById(R.id.tdadd);
         t2=(TextView)findViewById(R.id.tdview);
         t3=(TextView)findViewById(R.id.contadd);
-        t4=(TextView)findViewById(R.id.contview);
+
 
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class RegisterOptions extends AppCompatActivity {
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent b=new Intent(RegisterOptions.this,DisplayTransporters.class);
+                Intent b=new Intent(RegisterOptions.this,Option1.class);
                 startActivity(b);
             }
         });
@@ -39,7 +39,7 @@ public class RegisterOptions extends AppCompatActivity {
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent c=new Intent(RegisterOptions.this,Registercont.class);
+                Intent c=new Intent(RegisterOptions.this,Option2.class);
                 startActivity(c);
             }
         });
@@ -47,7 +47,7 @@ public class RegisterOptions extends AppCompatActivity {
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent d=new Intent(RegisterOptions.this,DisplayContainers.class);
+                Intent d=new Intent(RegisterOptions.this,Option3.class);
                 startActivity(d);
             }
         });
